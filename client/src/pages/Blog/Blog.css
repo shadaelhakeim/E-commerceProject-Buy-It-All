@@ -1,0 +1,105 @@
+/* Container */
+.blog-cont {
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 40px 20px;
+}
+
+/* Blog Container with Responsive Flexbox Layout */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Add spacing between cards */
+  gap: 20px; /* Adjusts spacing between cards */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Maximum width of a card */
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Image */
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Blog Content */
+.blog-content {
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+
+.blog-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* Blog Link */
+.blog-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.blog-link:hover {
+  background-color: #2980b9;
+}
+.blog-card:hover .blog-image {
+  filter: brightness(0.85);
+}
+/* Responsive Layout for Laptop and Above (Three Cards in a Row) */
+@media (min-width: 992px) {
+  .blog-card {
+    flex: 1 1 calc(33.333% - 20px); /* Three cards in one row */
+    margin: 10px 0; /* Adjusts margins between rows */
+  }
+}
+
+/* Responsive Layout for Tablets (Two Cards in a Row) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-card {
+    flex: 1 1 calc(50% - 20px); /* Two cards in a row */
+    margin: 10px 0;
+  }
+}
+
+/* Responsive Layout for Mobile (One Card in a Row) */
+@media (max-width: 767px) {
+  .blog-card {
+    flex: 1 1 100%; /* One card per row */
+    margin: 10px 0;
+  }
+}

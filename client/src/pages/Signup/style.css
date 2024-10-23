@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+.container-content {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to left top, #f3679c, #e383c7, #ca9ee4, #b4b5f1, #a1afe1, #93a8cf, #89a0bc, #6e8097, #536174, #3a4453, #222934);
+}
+.container-content .custom-font {
+  font-family: "Dancing Script", cursive !important;
+  color: var(--ternary-color);
+  margin-top: 7px;
+}
+.container-content .brand i {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: var(--ternary-color);
+}
+.container-content .content {
+  height: 80vh !important;
+  margin: 0 auto;
+}
+.container-content .content .main-dev {
+  border-radius: 15px;
+}
+.container-content .content .main-dev label {
+  font-size: 14px;
+}
+.container-content .content .main-dev input {
+  font-size: 14px;
+}
+.container-content .content .main-dev input::-moz-placeholder {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.container-content .content .main-dev input::placeholder {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.container-content .content .main-dev span {
+  cursor: pointer;
+}
+.container-content .content .main-dev input[type=checkbox] {
+  accent-color: #d66572;
+  color: white;
+  outline: none;
+}
+.container-content .content .main-dev button {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  background-image: linear-gradient(to left, #e383c7, #ca9ee4, #b4b5f1, #a1afe1, #93a8cf, #89a0bc, #6e8097, #536174, #3a4453, #222934);
+}
+.container-content .content .main-dev button:focus {
+  outline: none;
+}
+.container-content .content .main-dev .socials .social {
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  transition: 0.5s;
+}
+.container-content .content .main-dev .socials .social:hover {
+  border-color: var(--main-color);
+  transform: scale(1.1);
+}
+.container-content .content .main-dev .socials img {
+  width: 30px;
+  height: 30px;
+}
+.container-content .content .main-dev .socials span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.container-content .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-content .code-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.container-content .code-label {
+  margin-bottom: 16px;
+}
+.container-content .code-inputs {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.container-content .code-inputs input {
+  font-weight: bold;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 4px;
+  border: 2px solid #b4b5f1;
+  font-size: 38px;
+}
+.container-content .code-inputs input:focus {
+  outline: none;
+}
+.container-content .code-inputs input:nth-child(3n) {
+  margin-right: 24px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+    background-image: none;
+  }
+  body .brand {
+    margin-left: 5px !important;
+  }
+  body .content {
+    height: auto !important;
+  }
+  body .content .main-dev {
+    margin-top: 15% !important;
+    width: 90% !important;
+  }
+  body .content .main-dev .socials .social span {
+    display: none;
+  }
+}
+@media (max-width: 1029px) {
+  body .brand {
+    margin-left: 5px !important;
+  }
+  body .content .main-dev {
+    width: 80% !important;
+  }
+}/*# sourceMappingURL=style.css.map */

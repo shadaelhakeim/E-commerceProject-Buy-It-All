@@ -1,0 +1,120 @@
+@charset "UTF-8";
+nav {
+  background-color: var(--secondary-color);
+  height: 70px;
+  padding: 0 !important;
+  color: white !important;
+}
+nav .custom-font {
+  font-family: "Dancing Script", cursive !important;
+  color: var(--ternary-color);
+  margin-top: 7px;
+}
+nav .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navbar-brand i {
+  font-size: 25px;
+  margin-right: 10px;
+  color: var(--ternary-color);
+}
+nav .navbar-brand h4 {
+  margin-bottom: 15px;
+}
+nav .navbar-brand::after {
+  display: none;
+}
+nav .navbar-collapse {
+  transition: 1s !important;
+}
+nav .navbar-toggler {
+  border: 1px solid var(--ternary-color) !important;
+  outline: 0 !important;
+}
+nav .navbar-toggler i {
+  color: var(--ternary-color) !important;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+nav ul i,
+nav ul a,
+nav ul span {
+  cursor: pointer;
+  transition: all 0.9s !important;
+  margin-right: 15px;
+  color: white !important;
+}
+ nav ul i:hover,
+nav ul a:hover,
+nav ul span:hover {
+  color: var(--ternary-color) !important;
+} 
+nav ul i {
+  font-size: 18px;
+}
+nav ul a {
+  font-weight: 700 !important;
+  padding-bottom: 5px !important;
+  position: relative;
+}
+nav ul a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--ternary-color);
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+.nav-heart a::after{
+  background-color: transparent;
+}
+nav ul a:hover::after {
+  width: 90%;
+} 
+
+a.active {
+  color: var(--ternary-color) !important;
+}
+a.active::after {
+  width: 90%;
+}
+
+.fav-link{
+      padding: 7px;
+        border: 1px solid;
+        border-radius: 50%;
+}
+
+.fav-link:hover svg{
+fill: var(--ternary-color);
+} 
+@media (max-width: 990px) {
+  .navbar-collapse {
+    position: absolute; 
+    top: 70px; 
+    left: 0; 
+    transform: translateX(-250px); 
+    padding: 20px !important;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--secondary-color); 
+    border-radius: 0 0 5px 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; 
+    visibility: hidden; 
+  }
+  .navbar-collapse ul li {
+    margin-bottom: 20px !important;
+  }
+  .navbar-collapse.active {
+    transform: translateX(0); /* إظهار القائمة عند فتحها */
+    opacity: 1; /* جعل القائمة مرئية */
+    visibility: visible; /* السماح بالعرض */
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+/* How to Use Container */
+.how-to-use-container {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* How to Use Title */
+.how-to-use-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Section Titles */
+.how-to-use-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Section Content */
+.how-to-use-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .how-to-use-container {
+    padding: 20px;
+  }
+
+  .how-to-use-title {
+    font-size: 2rem;
+  }
+
+  .how-to-use-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .how-to-use-section p {
+    font-size: 1rem;
+  }
+}

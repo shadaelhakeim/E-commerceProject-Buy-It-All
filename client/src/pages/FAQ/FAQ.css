@@ -1,0 +1,123 @@
+/* General Container for the FAQ Section */
+.faq-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.faq-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  color: #333;
+}
+
+/* FAQ Item Structure */
+.faq-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item.open {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Question Styling */
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f7f7f7;
+  border-radius: 10px 10px 0 0;
+}
+
+.faq-question:hover {
+  background-color: #eaeaea;
+}
+
+/* Answer Styling */
+.faq-answer {
+  font-size: 1rem;
+  color: #666;
+  padding: 15px 20px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  max-height: 1000px;
+}
+
+/* Add hover and focus effects for interactivity */
+.faq-question:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 20px;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.feedback-form label {
+  margin: 10px 0 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.feedback-form .error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.feedback-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,35 @@
+/* Custom CSS */
+.card-title{
+color: var(--ternary-color);
+}
+.StripeElement {
+    background-color: #f8f9fa;  /* Light grey background */
+    padding: 10px;
+    border: 1px solid #ced4da;  /* Border styling */
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .StripeElement--focus {
+    border-color: #007bff;  /* Blue border on focus */
+  }
+  
+  .StripeElement--invalid {
+    border-color: #dc3545;  /* Red border on error */
+  }
+  
+  .payment-page {
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .card {
+    max-width: 500px; /* Adjust card width as needed */
+    width: 100%; /* Make card responsive */
+  }
+
+ .payment-cont button{
+    background-color: var(--ternary-color) !important;
+    font-weight: bold;
+    color: white;
+  }
+  

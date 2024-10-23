@@ -1,0 +1,67 @@
+.home-content {
+  background-image: none !important;
+  background-color: white;
+}
+.home-content .icon {
+  transition: 0.5s;
+}
+.home-content .icon i,
+.home-content .icon h6 {
+  color: var(--secondary-color);
+}
+.home-content .icon p {
+  font-size: 14px;
+}
+.home-content .seven h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+.home-content .seven h1:after,
+.home-content .seven h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+  height: 5px;
+  background-color: #f8f8f8;
+}
+.border {
+  border-right: 3px dashed white;
+}
+/* .brand{
+  border: 1px solid #ddd;
+  border-radius: 15px;
+} */
+.inner {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 2s;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: rgb(212, 48, 48);
+}
+.button:focus {
+outline: 0;
+border: 0;
+}
